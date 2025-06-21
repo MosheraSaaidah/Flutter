@@ -36,7 +36,7 @@ bottomNavigationBar:BottomNavigationBar(type: BottomNavigationBarType.fixed,
     selectedItemColor: Colors.grey,
     items: [
       BottomNavigationBarItem(icon: Icon(Icons.home),label: 'Home'),
-      BottomNavigationBarItem(icon:  Icon(Icons.shopping_cart),label: 'shop'),
+       BottomNavigationBarItem(icon:  Icon(Icons.shopping_cart),label: 'shop' ,),
       BottomNavigationBarItem(icon:  Icon(Icons.person),label: 'Profile'),
 ]) ,
     );

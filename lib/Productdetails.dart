@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'CartPage.dart';
+import 'Shop.dart';
 
 //Work by Moshera
 class Productdetails extends StatefulWidget {
@@ -14,13 +14,14 @@ class Productdetails extends StatefulWidget {
 }
 
 class _ProductdetailsState extends State<Productdetails> {
+
   String _size = 'M';
   int _numOfProduct = 1;
 
   @override
   Widget build(BuildContext context) {
     final item = widget.product;
-    return Scaffold(
+    return  Scaffold(
       appBar: AppBar(
         backgroundColor: Color(0xFFB2594B),
         leading: IconButton(
@@ -140,8 +141,10 @@ class _ProductdetailsState extends State<Productdetails> {
                       });
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (_) => CartPage()),
+                    MaterialPageRoute(builder: (_) => Shop()
+                    ),
                   );
+
                 },
                 style: ElevatedButton.styleFrom(
                   padding: EdgeInsets.symmetric(vertical: 16),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+/////// splash page
 class Mainpage extends StatelessWidget {
   const Mainpage({super.key});
 

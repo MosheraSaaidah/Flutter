@@ -12,6 +12,7 @@ class Prodcut extends StatefulWidget {
 }
 
 class _ProdcutState extends State<Prodcut> {
+  bool isLoading = true;
   List<Map<String, dynamic>> ProductList = [];
   bool IsProductNull = false;
   @override
@@ -38,6 +39,7 @@ class _ProdcutState extends State<Prodcut> {
       } else
         IsProductNull = false;
     });
+
   }
 
   @override
