@@ -51,7 +51,7 @@ class _ProductdetailsState extends State<Productdetails> {
               ],
             ),
             SizedBox(height: 12),
-            Text(item['description']),
+            Text(item['description'].toString().substring( 0,60)),
             SizedBox(height: 35),
             Text('Item Size', style: TextStyle(fontSize: 16)),
             SizedBox(height: 10),
